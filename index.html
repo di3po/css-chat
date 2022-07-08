@@ -106,7 +106,8 @@
 		window.scrollTo(0, document.body.scrollHeight);
 	  });
 
-	  function findColorCode(color_name) {
+	  function findColorCode(color_name) 
+	  {
 		let color_codes = [
 		  {
 			color_name: "red",
@@ -160,11 +161,14 @@
 
 		let found_code = null;
 
-		if (color_name == "all") {
+		if (color_name == "all") 
+		{
 		  found_code = color_codes.map(
 			(el) => `${el.color_name}: ` + el.color_code
 		  );
-		} else {
+		} 
+		else 
+		{
 		  found_code = color_codes.find((el) => {
 			return el.color_name == color_name;
 		  });
@@ -174,7 +178,8 @@
 		  }
 		}
 
-		if (found_code == null || found_code == undefined) {
+		if (found_code == null || found_code == undefined) 
+		{
 		  return "Try again, please :)";
 		}
 
